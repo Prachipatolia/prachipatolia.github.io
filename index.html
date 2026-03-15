@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Prachi Patolia | Health Informatics Portfolio</title>
+<!-- Font Awesome CDN for skill icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
 /* Global Styles */
 body {
@@ -26,6 +28,26 @@ header {
 }
 header h1 { margin: 0; font-size: 2.2em; }
 header p { margin: 5px 0 0; font-size: 1.1em; }
+
+/* Skills Logos (Font Awesome icons) */
+.skills-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  font-size: 50px;       /* size of the icons */
+  color: #2c3e50;        /* default icon color */
+  margin-top: 20px;
+}
+
+.skills-logos i {
+  transition: transform 0.2s, color 0.2s;  /* smooth hover effect */
+}
+
+.skills-logos i:hover {
+  transform: scale(1.2);  /* slightly enlarge on hover */
+  color: #3498db;         /* change color on hover */
+}
 
 /* Navigation */
 nav {
@@ -125,24 +147,25 @@ section {
 
 <section id="skills" class="skills">
   <h2>Skills</h2>
-  <ul>
-    <li>Python</li>
-    <li>R</li>
-    <li>SQL</li>
-    <li>Tableau</li>
-    <li>Power BI</li>
-    <li>Machine Learning</li>
-    <li>HL7 / FHIR / OMOP CDM</li>
-    <li>NLP & LLMs</li>
-    <li>Data Visualization</li>
-    <li>Cloud Platforms (GCP, Azure)</li>
-    <li>EMR/EHR Analytics</li>
-  </ul>
+  <p>I specialize in machine learning, AI, and health informatics. My expertise includes data preprocessing, predictive modeling, and visualization.</p>
+
+  <div class="skills-logos">
+    <i class="fab fa-python" title="Python"></i>
+    <i class="fas fa-database" title="SQL"></i>
+    <i class="fab fa-r-project" title="R"></i>
+    <i class="fas fa-map" title="ArcGIS"></i>
+    <i class="fab fa-tensorflow" title="TensorFlow"></i>
+    <i class="fab fa-tableau" title="Tableau"></i>
+    <i class="fas fa-chart-line" title="Looker"></i>
+    <i class="fas fa-file-medical" title="RedCap"></i>
+    <i class="fas fa-hospital" title="FHIR"></i>
+    <i class="fab fa-github" title="GitHub"></i>
+  </div>
 </section>
 
 <section id="contact" class="contact">
   <h2>Contact</h2>
-  <p>Email: patolia.prachi26@gmail.com</p>
+  <p>Email: patoliaprachi@gmail.com</p>
 </section>
 
 </body>
