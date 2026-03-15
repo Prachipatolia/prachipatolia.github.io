@@ -1,75 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Prachi Patolia | Health Informatics Portfolio</title>
-
 <style>
-body{
-  font-family: Arial;
-  margin:40px;
-  background:#f5f5f5;
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
 }
-h1{
-  color:#2c3e50;
+a { text-decoration: none; color: #2c3e50; }
+a:hover { color: #3498db; }
+
+/* Header */
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
-nav a{
-  margin-right:20px;
-  text-decoration:none;
-  font-weight:bold;
-  color:#2c3e50;
+header h1 { margin: 0; font-size: 2.2em; }
+header p { margin: 5px 0 0; font-size: 1.1em; }
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #ecf0f1;
+  padding: 10px 0;
+  gap: 30px;
 }
-.project{
-  background:white;
-  padding:15px;
-  margin-top:20px;
-  border-radius:8px;
+nav a { font-weight: bold; }
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Projects */
+.project {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Skills */
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+.skills li {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 0.95em;
+}
+
+/* Contact */
+.contact p {
+  font-weight: bold;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Prachi Patolia</h1>
-<p><b>Health Informatics & Data Science Professional</b></p>
+<header>
+  <h1>Prachi Patolia</h1>
+  <p>Health Informatics & Data Science Professional</p>
+</header>
 
 <nav>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<hr>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a healthcare data professional with a strong clinical and analytics background. 
+    I began my career as a dentist and have transitioned into healthcare data science and informatics, 
+    combining hands-on clinical experience with advanced analytical skills.
+  </p>
+  <p>
+    I have applied machine learning, AI, and data visualization to healthcare challenges such as 
+    predicting hospital readmissions, improving EMR workflows, and analyzing clinical trial attrition. 
+    I have experience building predictive models, designing interactive dashboards, and leveraging NLP and LLMs for clinical insights.
+  </p>
+  <p>
+    My goal is to bridge the gap between healthcare operations and data-driven decision-making by 
+    applying AI, analytics, and healthcare informatics to improve patient outcomes and operational efficiency. 
+    I enjoy solving complex problems, working across interdisciplinary teams, and continuously learning new technologies to drive meaningful impact in healthcare.
+  </p>
+</section>
 
-<h2 id="about">About Me</h2>
-<p>
-I am a healthcare data professional with a background in healthcare and analytics. 
-My work focuses on applying machine learning and data science to improve healthcare decision-making and patient outcomes.
-</p>
+<section id="projects">
+  <h2>Projects</h2>
 
-<h2 id="projects">Projects</h2>
+  <div class="project">
+    <h3>Clinical Trial Attrition Analysis</h3>
+    <p>Analyzed clinical trial data to identify patterns of participant dropout and geographic disparities, leveraging geospatial visualizations to inform trial design improvements.</p>
+  </div>
 
-<div class="project">
-<h3>Clinical Trial Attrition Analysis</h3>
-<p>Analyzed clinical trial data to identify patterns of participant dropout and geographic disparities.</p>
-</div>
+  <div class="project">
+    <h3>Hospital Readmission Prediction</h3>
+    <p>Built machine learning models to predict patients at risk of hospital readmission, supporting healthcare teams in proactive patient management and operational planning.</p>
+  </div>
 
-<div class="project">
-<h3>Hospital Readmission Prediction</h3>
-<p>Built machine learning models to predict patients at risk of hospital readmission.</p>
-</div>
+</section>
 
-<h2 id="skills">Skills</h2>
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Python</li>
+    <li>R</li>
+    <li>SQL</li>
+    <li>Tableau</li>
+    <li>Power BI</li>
+    <li>Machine Learning</li>
+    <li>HL7 / FHIR / OMOP CDM</li>
+    <li>NLP & LLMs</li>
+    <li>Data Visualization</li>
+    <li>Cloud Platforms (GCP, Azure)</li>
+    <li>EMR/EHR Analytics</li>
+  </ul>
+</section>
 
-<ul>
-<li>Python</li>
-<li>SQL</li>
-<li>Machine Learning</li>
-<li>Healthcare Data Analytics</li>
-</ul>
-
-<h2 id="contact">Contact</h2>
-<p>Email: patoliaprachi@gmail.com</p>
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: patolia.prachi26@gmail.com</p>
+</section>
 
 </body>
 </html>
